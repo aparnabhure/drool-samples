@@ -1,0 +1,34 @@
+{"name": "RuleName",
+    "conditions": [
+      {
+        "combine": "AND",
+        "conditionList": [
+          {
+            "field": "Publisher",
+            "operator": "EQUAL_TO",
+            "value": "xyz"
+          },
+          {
+            "field": "hash",
+            "operator": "EQUAL_TO",
+            "value": "yyy"
+          }
+        ]
+      },
+      {
+        "combine": "OR",
+        "conditionList": [
+          {
+            "field": "Publisher",
+            "operator": "EQUAL_TO",
+            "value": "xyz"
+          },
+          {
+            "field": "hash",
+            "operator": "EQUAL_TO",
+            "value": "yyy"
+          }
+        ]
+      }
+    ]
+}

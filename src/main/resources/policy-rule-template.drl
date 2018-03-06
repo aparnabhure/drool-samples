@@ -1,0 +1,19 @@
+template header
+
+ruleName
+condition
+
+package com.drools.sample;
+
+global com.drools.sample.AlertDecision alertDecision;
+
+template "alert"
+
+rule "@{ruleName}"
+when
+    @{condition}
+then
+    alertDecision.setDoAlert(Boolean.TRUE);
+end
+
+end template
